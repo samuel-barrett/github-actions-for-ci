@@ -1,15 +1,5 @@
-name: Test team approval workflow
-
-#the workflow file needs a steps: block
-#give your new step any name you wish
-#to use a community action, use the uses: keyword
-#label-when-approved-action requires a block called env: with the following environment variables:
-#APPROVALS is the number of required approvals that are required for a label to be applied, please set this to "1"
-#GITHUB_TOKEN is necessary so the action can create and apply labels to this repository. See the action's documentation for how to use it
-#ADD_LABEL is the name of the label which should be added when the number of approvals have been met, choose any label name you wish
-
+name: Team awesome's approval workflow
 on: pull_request_review
-
 jobs:
   labelWhenApproved:
     runs-on: ubuntu-latest
